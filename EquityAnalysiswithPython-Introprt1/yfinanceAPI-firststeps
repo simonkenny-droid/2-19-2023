@@ -1,0 +1,13 @@
+    # install yfinance
+
+import yfinance as yf
+import pandas as pd
+import matplotlib.pyplot as plt
+plt.style.use('seaborn')
+
+  
+  
+symbol = 'AAPL' # ticker symbol for Apple Inc
+
+df = yf.download (tickers = symbol)  # download historical data
+print (df)
